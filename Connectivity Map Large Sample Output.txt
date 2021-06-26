@@ -1,0 +1,305 @@
+Graph constructed successfully.
+
+The graph has 10 vertices.
+These vertices are
+Vertex at index 0 = Surrey
+Vertex at index 1 = Delta
+Vertex at index 2 = New Westminster
+Vertex at index 3 = Port Coquitlam
+Vertex at index 4 = Richmond
+Vertex at index 5 = Vancouver
+Vertex at index 6 = Burnaby
+Vertex at index 7 = Coquitlam
+Vertex at index 8 = UBC
+Vertex at index 9 = North Vancouver
+
+Each vertex together with its edge set looks like as follows
+Name = Surrey
+Edge Set
+         to ---> 1, cost = 3
+         to ---> 2, cost = 3
+         to ---> 3, cost = 4
+
+Name = Delta
+Edge Set
+         to ---> 0, cost = 3
+         to ---> 4, cost = 4
+         to ---> 5, cost = 8
+         to ---> 2, cost = 4
+
+Name = New Westminster
+Edge Set
+         to ---> 0, cost = 3
+         to ---> 1, cost = 4
+         to ---> 4, cost = 6
+         to ---> 6, cost = 2
+         to ---> 3, cost = 5
+
+Name = Port Coquitlam
+Edge Set
+         to ---> 0, cost = 4
+         to ---> 2, cost = 5
+         to ---> 6, cost = 5
+         to ---> 7, cost = 2
+
+Name = Richmond
+Edge Set
+         to ---> 1, cost = 4
+         to ---> 2, cost = 6
+         to ---> 8, cost = 5
+         to ---> 5, cost = 4
+         to ---> 6, cost = 5
+
+Name = Vancouver
+Edge Set
+         to ---> 1, cost = 8
+         to ---> 4, cost = 4
+         to ---> 6, cost = 5
+         to ---> 7, cost = 7
+         to ---> 8, cost = 3
+         to ---> 9, cost = 2
+
+Name = Burnaby
+Edge Set
+         to ---> 2, cost = 2
+         to ---> 3, cost = 5
+         to ---> 4, cost = 5
+         to ---> 5, cost = 5
+         to ---> 7, cost = 3
+
+Name = Coquitlam
+Edge Set
+         to ---> 3, cost = 2
+         to ---> 6, cost = 3
+         to ---> 5, cost = 7
+
+Name = UBC
+Edge Set
+         to ---> 4, cost = 5
+         to ---> 9, cost = 6
+         to ---> 5, cost = 3
+
+Name = North Vancouver
+Edge Set
+         to ---> 8, cost = 6
+         to ---> 5, cost = 2
+
+
+The graph connectivities are as follows...
+Surrey                   Delta                    3.00
+Surrey                   New Westminster          3.00
+Surrey                   Port Coquitlam           4.00
+Delta                    Surrey                   3.00
+Delta                    Richmond                 4.00
+Delta                    Vancouver                8.00
+Delta                    New Westminster          4.00
+New Westminster          Surrey                   3.00
+New Westminster          Delta                    4.00
+New Westminster          Richmond                 6.00
+New Westminster          Burnaby                  2.00
+New Westminster          Port Coquitlam           5.00
+Port Coquitlam           Surrey                   4.00
+Port Coquitlam           New Westminster          5.00
+Port Coquitlam           Burnaby                  5.00
+Port Coquitlam           Coquitlam                2.00
+Richmond                 Delta                    4.00
+Richmond                 New Westminster          6.00
+Richmond                 UBC                      5.00
+Richmond                 Vancouver                4.00
+Richmond                 Burnaby                  5.00
+Vancouver                Delta                    8.00
+Vancouver                Richmond                 4.00
+Vancouver                Burnaby                  5.00
+Vancouver                Coquitlam                7.00
+Vancouver                UBC                      3.00
+Vancouver                North Vancouver          2.00
+Burnaby                  New Westminster          2.00
+Burnaby                  Port Coquitlam           5.00
+Burnaby                  Richmond                 5.00
+Burnaby                  Vancouver                5.00
+Burnaby                  Coquitlam                3.00
+Coquitlam                Port Coquitlam           2.00
+Coquitlam                Burnaby                  3.00
+Coquitlam                Vancouver                7.00
+UBC                      Richmond                 5.00
+UBC                      North Vancouver          6.00
+UBC                      Vancouver                3.00
+North Vancouver          UBC                      6.00
+North Vancouver          Vancouver                2.00
+
+Computing shortest path from UBC to New Westminster
+Path found: [UBC -> Richmond -> Delta -> Surrey -> New Westminster] with cost 15
+Path found: [UBC -> Richmond -> Delta -> Surrey -> Port Coquitlam -> New Westminster] with cost 21
+Path found: [UBC -> Richmond -> Delta -> Surrey -> Port Coquitlam -> Burnaby -> New Westminster] with cost 23
+Path found: [UBC -> Richmond -> Delta -> Surrey -> Port Coquitlam -> Coquitlam -> Burnaby -> New Westminster] with cost 23
+Path found: [UBC -> Richmond -> Delta -> Surrey -> Port Coquitlam -> Coquitlam -> Vancouver -> Burnaby -> New Westminster] with cost 32
+Path found: [UBC -> Richmond -> Delta -> Vancouver -> Burnaby -> New Westminster] with cost 24
+Path found: [UBC -> Richmond -> Delta -> Vancouver -> Burnaby -> Port Coquitlam -> Surrey -> New Westminster] with cost 34
+Path found: [UBC -> Richmond -> Delta -> Vancouver -> Burnaby -> Port Coquitlam -> New Westminster] with cost 32
+Path found: [UBC -> Richmond -> Delta -> Vancouver -> Burnaby -> Coquitlam -> Port Coquitlam -> Surrey -> New Westminster] with cost 34
+Path found: [UBC -> Richmond -> Delta -> Vancouver -> Burnaby -> Coquitlam -> Port Coquitlam -> New Westminster] with cost 32
+Path found: [UBC -> Richmond -> Delta -> Vancouver -> Coquitlam -> Port Coquitlam -> Surrey -> New Westminster] with cost 33
+Path found: [UBC -> Richmond -> Delta -> Vancouver -> Coquitlam -> Port Coquitlam -> New Westminster] with cost 31
+Path found: [UBC -> Richmond -> Delta -> Vancouver -> Coquitlam -> Port Coquitlam -> Burnaby -> New Westminster] with cost 33
+Path found: [UBC -> Richmond -> Delta -> Vancouver -> Coquitlam -> Burnaby -> New Westminster] with cost 29
+Path found: [UBC -> Richmond -> Delta -> Vancouver -> Coquitlam -> Burnaby -> Port Coquitlam -> Surrey -> New Westminster] with cost 39
+Path found: [UBC -> Richmond -> Delta -> Vancouver -> Coquitlam -> Burnaby -> Port Coquitlam -> New Westminster] with cost 37
+Path found: [UBC -> Richmond -> Delta -> New Westminster] with cost 13
+Path found: [UBC -> Richmond -> New Westminster] with cost 11
+Path found: [UBC -> Richmond -> Vancouver -> Delta -> Surrey -> New Westminster] with cost 23
+Path found: [UBC -> Richmond -> Vancouver -> Delta -> Surrey -> Port Coquitlam -> New Westminster] with cost 29
+Path found: [UBC -> Richmond -> Vancouver -> Delta -> Surrey -> Port Coquitlam -> Burnaby -> New Westminster] with cost 31
+Path found: [UBC -> Richmond -> Vancouver -> Delta -> Surrey -> Port Coquitlam -> Coquitlam -> Burnaby -> New Westminster] with cost 31
+Path found: [UBC -> Richmond -> Vancouver -> Delta -> New Westminster] with cost 21
+Path found: [UBC -> Richmond -> Vancouver -> Burnaby -> New Westminster] with cost 16
+Path found: [UBC -> Richmond -> Vancouver -> Burnaby -> Port Coquitlam -> Surrey -> Delta -> New Westminster] with cost 30
+Path found: [UBC -> Richmond -> Vancouver -> Burnaby -> Port Coquitlam -> Surrey -> New Westminster] with cost 26
+Path found: [UBC -> Richmond -> Vancouver -> Burnaby -> Port Coquitlam -> New Westminster] with cost 24
+Path found: [UBC -> Richmond -> Vancouver -> Burnaby -> Coquitlam -> Port Coquitlam -> Surrey -> Delta -> New Westminster] with cost 30
+Path found: [UBC -> Richmond -> Vancouver -> Burnaby -> Coquitlam -> Port Coquitlam -> Surrey -> New Westminster] with cost 26
+Path found: [UBC -> Richmond -> Vancouver -> Burnaby -> Coquitlam -> Port Coquitlam -> New Westminster] with cost 24
+Path found: [UBC -> Richmond -> Vancouver -> Coquitlam -> Port Coquitlam -> Surrey -> Delta -> New Westminster] with cost 29
+Path found: [UBC -> Richmond -> Vancouver -> Coquitlam -> Port Coquitlam -> Surrey -> New Westminster] with cost 25
+Path found: [UBC -> Richmond -> Vancouver -> Coquitlam -> Port Coquitlam -> New Westminster] with cost 23
+Path found: [UBC -> Richmond -> Vancouver -> Coquitlam -> Port Coquitlam -> Burnaby -> New Westminster] with cost 25
+Path found: [UBC -> Richmond -> Vancouver -> Coquitlam -> Burnaby -> New Westminster] with cost 21
+Path found: [UBC -> Richmond -> Vancouver -> Coquitlam -> Burnaby -> Port Coquitlam -> Surrey -> Delta -> New Westminster] with cost 35
+Path found: [UBC -> Richmond -> Vancouver -> Coquitlam -> Burnaby -> Port Coquitlam -> Surrey -> New Westminster] with cost 31
+Path found: [UBC -> Richmond -> Vancouver -> Coquitlam -> Burnaby -> Port Coquitlam -> New Westminster] with cost 29
+Path found: [UBC -> Richmond -> Burnaby -> New Westminster] with cost 12
+Path found: [UBC -> Richmond -> Burnaby -> Port Coquitlam -> Surrey -> Delta -> New Westminster] with cost 26
+Path found: [UBC -> Richmond -> Burnaby -> Port Coquitlam -> Surrey -> New Westminster] with cost 22
+Path found: [UBC -> Richmond -> Burnaby -> Port Coquitlam -> New Westminster] with cost 20
+Path found: [UBC -> Richmond -> Burnaby -> Port Coquitlam -> Coquitlam -> Vancouver -> Delta -> Surrey -> New Westminster] with cost 38
+Path found: [UBC -> Richmond -> Burnaby -> Port Coquitlam -> Coquitlam -> Vancouver -> Delta -> New Westminster] with cost 36
+Path found: [UBC -> Richmond -> Burnaby -> Vancouver -> Delta -> Surrey -> New Westminster] with cost 29
+Path found: [UBC -> Richmond -> Burnaby -> Vancouver -> Delta -> Surrey -> Port Coquitlam -> New Westminster] with cost 35
+Path found: [UBC -> Richmond -> Burnaby -> Vancouver -> Delta -> New Westminster] with cost 27
+Path found: [UBC -> Richmond -> Burnaby -> Vancouver -> Coquitlam -> Port Coquitlam -> Surrey -> Delta -> New Westminster] with cost 35
+Path found: [UBC -> Richmond -> Burnaby -> Vancouver -> Coquitlam -> Port Coquitlam -> Surrey -> New Westminster] with cost 31
+Path found: [UBC -> Richmond -> Burnaby -> Vancouver -> Coquitlam -> Port Coquitlam -> New Westminster] with cost 29
+Path found: [UBC -> Richmond -> Burnaby -> Coquitlam -> Port Coquitlam -> Surrey -> Delta -> New Westminster] with cost 26
+Path found: [UBC -> Richmond -> Burnaby -> Coquitlam -> Port Coquitlam -> Surrey -> New Westminster] with cost 22
+Path found: [UBC -> Richmond -> Burnaby -> Coquitlam -> Port Coquitlam -> New Westminster] with cost 20
+Path found: [UBC -> Richmond -> Burnaby -> Coquitlam -> Vancouver -> Delta -> Surrey -> New Westminster] with cost 34
+Path found: [UBC -> Richmond -> Burnaby -> Coquitlam -> Vancouver -> Delta -> Surrey -> Port Coquitlam -> New Westminster] with cost 40
+Path found: [UBC -> Richmond -> Burnaby -> Coquitlam -> Vancouver -> Delta -> New Westminster] with cost 32
+Path found: [UBC -> North Vancouver -> Vancouver -> Delta -> Surrey -> New Westminster] with cost 22
+Path found: [UBC -> North Vancouver -> Vancouver -> Delta -> Surrey -> Port Coquitlam -> New Westminster] with cost 28
+Path found: [UBC -> North Vancouver -> Vancouver -> Delta -> Surrey -> Port Coquitlam -> Burnaby -> New Westminster] with cost 30
+Path found: [UBC -> North Vancouver -> Vancouver -> Delta -> Surrey -> Port Coquitlam -> Burnaby -> Richmond -> New Westminster] with cost 39
+Path found: [UBC -> North Vancouver -> Vancouver -> Delta -> Surrey -> Port Coquitlam -> Coquitlam -> Burnaby -> New Westminster] with cost 30
+Path found: [UBC -> North Vancouver -> Vancouver -> Delta -> Surrey -> Port Coquitlam -> Coquitlam -> Burnaby -> Richmond -> New Westminster] with cost 39
+Path found: [UBC -> North Vancouver -> Vancouver -> Delta -> Richmond -> New Westminster] with cost 26
+Path found: [UBC -> North Vancouver -> Vancouver -> Delta -> Richmond -> Burnaby -> New Westminster] with cost 27
+Path found: [UBC -> North Vancouver -> Vancouver -> Delta -> Richmond -> Burnaby -> Port Coquitlam -> Surrey -> New Westminster] with cost 37
+Path found: [UBC -> North Vancouver -> Vancouver -> Delta -> Richmond -> Burnaby -> Port Coquitlam -> New Westminster] with cost 35
+Path found: [UBC -> North Vancouver -> Vancouver -> Delta -> Richmond -> Burnaby -> Coquitlam -> Port Coquitlam -> Surrey -> New Westminster] with cost 37
+Path found: [UBC -> North Vancouver -> Vancouver -> Delta -> Richmond -> Burnaby -> Coquitlam -> Port Coquitlam -> New Westminster] with cost 35
+Path found: [UBC -> North Vancouver -> Vancouver -> Delta -> New Westminster] with cost 20
+Path found: [UBC -> North Vancouver -> Vancouver -> Richmond -> Delta -> Surrey -> New Westminster] with cost 22
+Path found: [UBC -> North Vancouver -> Vancouver -> Richmond -> Delta -> Surrey -> Port Coquitlam -> New Westminster] with cost 28
+Path found: [UBC -> North Vancouver -> Vancouver -> Richmond -> Delta -> Surrey -> Port Coquitlam -> Burnaby -> New Westminster] with cost 30
+Path found: [UBC -> North Vancouver -> Vancouver -> Richmond -> Delta -> Surrey -> Port Coquitlam -> Coquitlam -> Burnaby -> New Westminster] with cost 30
+Path found: [UBC -> North Vancouver -> Vancouver -> Richmond -> Delta -> New Westminster] with cost 20
+Path found: [UBC -> North Vancouver -> Vancouver -> Richmond -> New Westminster] with cost 18
+Path found: [UBC -> North Vancouver -> Vancouver -> Richmond -> Burnaby -> New Westminster] with cost 19
+Path found: [UBC -> North Vancouver -> Vancouver -> Richmond -> Burnaby -> Port Coquitlam -> Surrey -> Delta -> New Westminster] with cost 33
+Path found: [UBC -> North Vancouver -> Vancouver -> Richmond -> Burnaby -> Port Coquitlam -> Surrey -> New Westminster] with cost 29
+Path found: [UBC -> North Vancouver -> Vancouver -> Richmond -> Burnaby -> Port Coquitlam -> New Westminster] with cost 27
+Path found: [UBC -> North Vancouver -> Vancouver -> Richmond -> Burnaby -> Coquitlam -> Port Coquitlam -> Surrey -> Delta -> New Westminster] with cost 33
+Path found: [UBC -> North Vancouver -> Vancouver -> Richmond -> Burnaby -> Coquitlam -> Port Coquitlam -> Surrey -> New Westminster] with cost 29
+Path found: [UBC -> North Vancouver -> Vancouver -> Richmond -> Burnaby -> Coquitlam -> Port Coquitlam -> New Westminster] with cost 27
+Path found: [UBC -> North Vancouver -> Vancouver -> Burnaby -> New Westminster] with cost 15
+Path found: [UBC -> North Vancouver -> Vancouver -> Burnaby -> Port Coquitlam -> Surrey -> Delta -> Richmond -> New Westminster] with cost 35
+Path found: [UBC -> North Vancouver -> Vancouver -> Burnaby -> Port Coquitlam -> Surrey -> Delta -> New Westminster] with cost 29
+Path found: [UBC -> North Vancouver -> Vancouver -> Burnaby -> Port Coquitlam -> Surrey -> New Westminster] with cost 25
+Path found: [UBC -> North Vancouver -> Vancouver -> Burnaby -> Port Coquitlam -> New Westminster] with cost 23
+Path found: [UBC -> North Vancouver -> Vancouver -> Burnaby -> Richmond -> Delta -> Surrey -> New Westminster] with cost 28
+Path found: [UBC -> North Vancouver -> Vancouver -> Burnaby -> Richmond -> Delta -> Surrey -> Port Coquitlam -> New Westminster] with cost 34
+Path found: [UBC -> North Vancouver -> Vancouver -> Burnaby -> Richmond -> Delta -> New Westminster] with cost 26
+Path found: [UBC -> North Vancouver -> Vancouver -> Burnaby -> Richmond -> New Westminster] with cost 24
+Path found: [UBC -> North Vancouver -> Vancouver -> Burnaby -> Coquitlam -> Port Coquitlam -> Surrey -> Delta -> Richmond -> New Westminster] with cost 35
+Path found: [UBC -> North Vancouver -> Vancouver -> Burnaby -> Coquitlam -> Port Coquitlam -> Surrey -> Delta -> New Westminster] with cost 29
+Path found: [UBC -> North Vancouver -> Vancouver -> Burnaby -> Coquitlam -> Port Coquitlam -> Surrey -> New Westminster] with cost 25
+Path found: [UBC -> North Vancouver -> Vancouver -> Burnaby -> Coquitlam -> Port Coquitlam -> New Westminster] with cost 23
+Path found: [UBC -> North Vancouver -> Vancouver -> Coquitlam -> Port Coquitlam -> Surrey -> Delta -> Richmond -> New Westminster] with cost 34
+Path found: [UBC -> North Vancouver -> Vancouver -> Coquitlam -> Port Coquitlam -> Surrey -> Delta -> Richmond -> Burnaby -> New Westminster] with cost 35
+Path found: [UBC -> North Vancouver -> Vancouver -> Coquitlam -> Port Coquitlam -> Surrey -> Delta -> New Westminster] with cost 28
+Path found: [UBC -> North Vancouver -> Vancouver -> Coquitlam -> Port Coquitlam -> Surrey -> New Westminster] with cost 24
+Path found: [UBC -> North Vancouver -> Vancouver -> Coquitlam -> Port Coquitlam -> New Westminster] with cost 22
+Path found: [UBC -> North Vancouver -> Vancouver -> Coquitlam -> Port Coquitlam -> Burnaby -> New Westminster] with cost 24
+Path found: [UBC -> North Vancouver -> Vancouver -> Coquitlam -> Port Coquitlam -> Burnaby -> Richmond -> Delta -> Surrey -> New Westminster] with cost 37
+Path found: [UBC -> North Vancouver -> Vancouver -> Coquitlam -> Port Coquitlam -> Burnaby -> Richmond -> Delta -> New Westminster] with cost 35
+Path found: [UBC -> North Vancouver -> Vancouver -> Coquitlam -> Port Coquitlam -> Burnaby -> Richmond -> New Westminster] with cost 33
+Path found: [UBC -> North Vancouver -> Vancouver -> Coquitlam -> Burnaby -> New Westminster] with cost 20
+Path found: [UBC -> North Vancouver -> Vancouver -> Coquitlam -> Burnaby -> Port Coquitlam -> Surrey -> Delta -> Richmond -> New Westminster] with cost 40
+Path found: [UBC -> North Vancouver -> Vancouver -> Coquitlam -> Burnaby -> Port Coquitlam -> Surrey -> Delta -> New Westminster] with cost 34
+Path found: [UBC -> North Vancouver -> Vancouver -> Coquitlam -> Burnaby -> Port Coquitlam -> Surrey -> New Westminster] with cost 30
+Path found: [UBC -> North Vancouver -> Vancouver -> Coquitlam -> Burnaby -> Port Coquitlam -> New Westminster] with cost 28
+Path found: [UBC -> North Vancouver -> Vancouver -> Coquitlam -> Burnaby -> Richmond -> Delta -> Surrey -> New Westminster] with cost 33
+Path found: [UBC -> North Vancouver -> Vancouver -> Coquitlam -> Burnaby -> Richmond -> Delta -> Surrey -> Port Coquitlam -> New Westminster] with cost 39
+Path found: [UBC -> North Vancouver -> Vancouver -> Coquitlam -> Burnaby -> Richmond -> Delta -> New Westminster] with cost 31
+Path found: [UBC -> North Vancouver -> Vancouver -> Coquitlam -> Burnaby -> Richmond -> New Westminster] with cost 29
+Path found: [UBC -> Vancouver -> Delta -> Surrey -> New Westminster] with cost 17
+Path found: [UBC -> Vancouver -> Delta -> Surrey -> Port Coquitlam -> New Westminster] with cost 23
+Path found: [UBC -> Vancouver -> Delta -> Surrey -> Port Coquitlam -> Burnaby -> New Westminster] with cost 25
+Path found: [UBC -> Vancouver -> Delta -> Surrey -> Port Coquitlam -> Burnaby -> Richmond -> New Westminster] with cost 34
+Path found: [UBC -> Vancouver -> Delta -> Surrey -> Port Coquitlam -> Coquitlam -> Burnaby -> New Westminster] with cost 25
+Path found: [UBC -> Vancouver -> Delta -> Surrey -> Port Coquitlam -> Coquitlam -> Burnaby -> Richmond -> New Westminster] with cost 34
+Path found: [UBC -> Vancouver -> Delta -> Richmond -> New Westminster] with cost 21
+Path found: [UBC -> Vancouver -> Delta -> Richmond -> Burnaby -> New Westminster] with cost 22
+Path found: [UBC -> Vancouver -> Delta -> Richmond -> Burnaby -> Port Coquitlam -> Surrey -> New Westminster] with cost 32
+Path found: [UBC -> Vancouver -> Delta -> Richmond -> Burnaby -> Port Coquitlam -> New Westminster] with cost 30
+Path found: [UBC -> Vancouver -> Delta -> Richmond -> Burnaby -> Coquitlam -> Port Coquitlam -> Surrey -> New Westminster] with cost 32
+Path found: [UBC -> Vancouver -> Delta -> Richmond -> Burnaby -> Coquitlam -> Port Coquitlam -> New Westminster] with cost 30
+Path found: [UBC -> Vancouver -> Delta -> New Westminster] with cost 15
+Path found: [UBC -> Vancouver -> Richmond -> Delta -> Surrey -> New Westminster] with cost 17
+Path found: [UBC -> Vancouver -> Richmond -> Delta -> Surrey -> Port Coquitlam -> New Westminster] with cost 23
+Path found: [UBC -> Vancouver -> Richmond -> Delta -> Surrey -> Port Coquitlam -> Burnaby -> New Westminster] with cost 25
+Path found: [UBC -> Vancouver -> Richmond -> Delta -> Surrey -> Port Coquitlam -> Coquitlam -> Burnaby -> New Westminster] with cost 25
+Path found: [UBC -> Vancouver -> Richmond -> Delta -> New Westminster] with cost 15
+Path found: [UBC -> Vancouver -> Richmond -> New Westminster] with cost 13
+Path found: [UBC -> Vancouver -> Richmond -> Burnaby -> New Westminster] with cost 14
+Path found: [UBC -> Vancouver -> Richmond -> Burnaby -> Port Coquitlam -> Surrey -> Delta -> New Westminster] with cost 28
+Path found: [UBC -> Vancouver -> Richmond -> Burnaby -> Port Coquitlam -> Surrey -> New Westminster] with cost 24
+Path found: [UBC -> Vancouver -> Richmond -> Burnaby -> Port Coquitlam -> New Westminster] with cost 22
+Path found: [UBC -> Vancouver -> Richmond -> Burnaby -> Coquitlam -> Port Coquitlam -> Surrey -> Delta -> New Westminster] with cost 28
+Path found: [UBC -> Vancouver -> Richmond -> Burnaby -> Coquitlam -> Port Coquitlam -> Surrey -> New Westminster] with cost 24
+Path found: [UBC -> Vancouver -> Richmond -> Burnaby -> Coquitlam -> Port Coquitlam -> New Westminster] with cost 22
+Path found: [UBC -> Vancouver -> Burnaby -> New Westminster] with cost 10
+Path found: [UBC -> Vancouver -> Burnaby -> Port Coquitlam -> Surrey -> Delta -> Richmond -> New Westminster] with cost 30
+Path found: [UBC -> Vancouver -> Burnaby -> Port Coquitlam -> Surrey -> Delta -> New Westminster] with cost 24
+Path found: [UBC -> Vancouver -> Burnaby -> Port Coquitlam -> Surrey -> New Westminster] with cost 20
+Path found: [UBC -> Vancouver -> Burnaby -> Port Coquitlam -> New Westminster] with cost 18
+Path found: [UBC -> Vancouver -> Burnaby -> Richmond -> Delta -> Surrey -> New Westminster] with cost 23
+Path found: [UBC -> Vancouver -> Burnaby -> Richmond -> Delta -> Surrey -> Port Coquitlam -> New Westminster] with cost 29
+Path found: [UBC -> Vancouver -> Burnaby -> Richmond -> Delta -> New Westminster] with cost 21
+Path found: [UBC -> Vancouver -> Burnaby -> Richmond -> New Westminster] with cost 19
+Path found: [UBC -> Vancouver -> Burnaby -> Coquitlam -> Port Coquitlam -> Surrey -> Delta -> Richmond -> New Westminster] with cost 30
+Path found: [UBC -> Vancouver -> Burnaby -> Coquitlam -> Port Coquitlam -> Surrey -> Delta -> New Westminster] with cost 24
+Path found: [UBC -> Vancouver -> Burnaby -> Coquitlam -> Port Coquitlam -> Surrey -> New Westminster] with cost 20
+Path found: [UBC -> Vancouver -> Burnaby -> Coquitlam -> Port Coquitlam -> New Westminster] with cost 18
+Path found: [UBC -> Vancouver -> Coquitlam -> Port Coquitlam -> Surrey -> Delta -> Richmond -> New Westminster] with cost 29
+Path found: [UBC -> Vancouver -> Coquitlam -> Port Coquitlam -> Surrey -> Delta -> Richmond -> Burnaby -> New Westminster] with cost 30
+Path found: [UBC -> Vancouver -> Coquitlam -> Port Coquitlam -> Surrey -> Delta -> New Westminster] with cost 23
+Path found: [UBC -> Vancouver -> Coquitlam -> Port Coquitlam -> Surrey -> New Westminster] with cost 19
+Path found: [UBC -> Vancouver -> Coquitlam -> Port Coquitlam -> New Westminster] with cost 17
+Path found: [UBC -> Vancouver -> Coquitlam -> Port Coquitlam -> Burnaby -> New Westminster] with cost 19
+Path found: [UBC -> Vancouver -> Coquitlam -> Port Coquitlam -> Burnaby -> Richmond -> Delta -> Surrey -> New Westminster] with cost 32
+Path found: [UBC -> Vancouver -> Coquitlam -> Port Coquitlam -> Burnaby -> Richmond -> Delta -> New Westminster] with cost 30
+Path found: [UBC -> Vancouver -> Coquitlam -> Port Coquitlam -> Burnaby -> Richmond -> New Westminster] with cost 28
+Path found: [UBC -> Vancouver -> Coquitlam -> Burnaby -> New Westminster] with cost 15
+Path found: [UBC -> Vancouver -> Coquitlam -> Burnaby -> Port Coquitlam -> Surrey -> Delta -> Richmond -> New Westminster] with cost 35
+Path found: [UBC -> Vancouver -> Coquitlam -> Burnaby -> Port Coquitlam -> Surrey -> Delta -> New Westminster] with cost 29
+Path found: [UBC -> Vancouver -> Coquitlam -> Burnaby -> Port Coquitlam -> Surrey -> New Westminster] with cost 25
+Path found: [UBC -> Vancouver -> Coquitlam -> Burnaby -> Port Coquitlam -> New Westminster] with cost 23
+Path found: [UBC -> Vancouver -> Coquitlam -> Burnaby -> Richmond -> Delta -> Surrey -> New Westminster] with cost 28
+Path found: [UBC -> Vancouver -> Coquitlam -> Burnaby -> Richmond -> Delta -> Surrey -> Port Coquitlam -> New Westminster] with cost 34
+Path found: [UBC -> Vancouver -> Coquitlam -> Burnaby -> Richmond -> Delta -> New Westminster] with cost 26
+Path found: [UBC -> Vancouver -> Coquitlam -> Burnaby -> Richmond -> New Westminster] with cost 24
+
+Departure: UBC
+Destination: New Westminster
+The minimum cost path is: [UBC -> Vancouver -> Burnaby -> New Westminster] with cost = 10
+Press any key to continue .
